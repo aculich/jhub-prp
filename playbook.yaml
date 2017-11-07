@@ -15,6 +15,11 @@
         comment: "Aaron Nebres"
         uid: 1002
         groups: sudo,docker
+    - user:
+        name: chench
+        comment: "Chris Hench"
+        uid: 1004
+        groups: sudo,docker
     - authorized_key:
         user: zane
         state: present
@@ -27,3 +32,7 @@
     #     user: nebres
     #     state: present
     #     key: https://github.com/zzz-get-from-nebres.keys
+    - authorized_key:
+        user: chench
+        state: present
+        key: https://github.com/henchc.keys
