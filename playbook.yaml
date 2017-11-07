@@ -1,0 +1,32 @@
+- hosts: localhost
+  tasks:
+    - user:
+        name: zane
+        comment: "Zane Cooper"
+        uid: 1000
+        gid: 1001
+        groups: admin,docker
+    - user:
+        name: aaron
+        comment: "Aaron Culich"
+        uid: 1001
+        gid: 1002
+        groups: admin,docker
+    - user:
+        name: nebres
+        comment: "Aaron Nebres"
+        uid: 1002
+        gid: 1003
+        groups: admin,docker
+    - authorized_key:
+        user: zane
+        state: present
+        key: https://github.com/zcooper.keys
+    - authorized_key:
+        user: aaron
+        state: present
+        key: https://github.com/aculich.keys
+    # - authorized_key:
+    #     user: nebres
+    #     state: present
+    #     key: https://github.com/zzz-get-from-nebres.keys
