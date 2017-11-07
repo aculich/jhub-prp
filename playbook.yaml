@@ -4,17 +4,17 @@
         name: zane
         comment: "Zane Cooper"
         uid: 1000
-        groups: admin,docker
+        groups: sudo,docker
     - user:
         name: aaron
         comment: "Aaron Culich"
         uid: 1001
-        groups: admin,docker
+        groups: sudo,docker
     - user:
         name: nebres
         comment: "Aaron Nebres"
         uid: 1002
-        groups: admin,docker
+        groups: sudo,docker
     - authorized_key:
         user: zane
         state: present
