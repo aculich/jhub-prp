@@ -25,17 +25,17 @@
         comment: "Tony Cricelli"
         uid: 1005
         groups: sudo,docker
-     - user:
+    - user:
         name: usha
         comment: "Usha Manandhar"
         uid: 1006
         groups: sudo,docker
-     - user:
+    - user:
         name: rylo
         comment: "Ryan Lovett"
         uid: 1007
         groups: sudo,docker
-     - authorized_key:
+    - authorized_key:
         user: zane
         state: present
         key: https://github.com/zcooper.keys
