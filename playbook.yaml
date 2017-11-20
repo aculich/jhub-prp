@@ -20,7 +20,22 @@
         comment: "Chris Hench"
         uid: 1004
         groups: sudo,docker
-    - authorized_key:
+    - user:
+        name: tony
+        comment: "Tony Cricelli"
+        uid: 1005
+        groups: sudo,docker
+     - user:
+        name: usha
+        comment: "Usha Manandhar"
+        uid: 1006
+        groups: sudo,docker
+     - user:
+        name: rylo
+        comment: "Ryan Lovett"
+        uid: 1007
+        groups: sudo,docker
+     - authorized_key:
         user: zane
         state: present
         key: https://github.com/zcooper.keys
@@ -36,3 +51,25 @@
         user: chench
         state: present
         key: https://github.com/henchc.keys
+    - authorized_key:
+        user: tony
+        state: present
+        key: https://github.com/Montereytony.keys
+    - authorized_key:
+        user: usha
+        state: present
+        key: https://github.com/ushamanandhar.keys
+    - authorized_key:
+        user: rylo
+        state: present
+        key: https://github.com/ryanlovett.keys
+
+
+
+
+
+
+
+
+
+
