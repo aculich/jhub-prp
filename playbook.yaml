@@ -5,41 +5,49 @@
         comment: "Zane Cooper"
         uid: 1000
         groups: sudo,docker
+        shell: /bin/bash
     - user:
         name: aaron
         comment: "Aaron Culich"
         uid: 1001
         groups: sudo,docker
+        shell: /bin/bash
     - user:
         name: nebres
         comment: "Aaron Nebres"
         uid: 1002
         groups: sudo,docker
+        shell: /bin/bash
     - user:
         name: chench
         comment: "Chris Hench"
         uid: 1004
         groups: sudo,docker
+        shell: /bin/bash
     - user:
         name: tony
         comment: "Tony Cricelli"
         uid: 1005
         groups: sudo,docker
+        shell: /bin/bash
     - user:
         name: usha
         comment: "Usha Manandhar"
         uid: 1006
         groups: sudo,docker
+        shell: /bin/bash
     - user:
         name: rylo
         comment: "Ryan Lovett"
         uid: 1007
         groups: sudo,docker
+        shell: /bin/bash
     - user:
         name: mmmanning
         comment: "Maurice Manning"
         uid: 1008
         groups: sudo,docker
+        shell: /bin/bash
     - authorized_key:
         user: zane
         state: present
