@@ -35,6 +35,11 @@
         comment: "Ryan Lovett"
         uid: 1007
         groups: sudo,docker
+    - user:
+        name: mmmanning
+        comment: "Maurice Manning"
+        uid: 1008
+        groups: sudo,docker
     - authorized_key:
         user: zane
         state: present
@@ -63,13 +68,7 @@
         user: rylo
         state: present
         key: https://github.com/ryanlovett.keys
-
-
-
-
-
-
-
-
-
-
+    - authorized_key:
+        user: mmmanning
+        state: present
+        key: https://github.com/MauriceManning.keys
